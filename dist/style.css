@@ -9,9 +9,17 @@ body {
     background-color: #fdf2d7;
     width: 66vw;
     height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     box-shadow: 0px 5px 15px black;
+    background-image: url('./assets/food.webp');
+    background-size: cover;
+    opacity: 1;
+}
+
+#about {
+    opacity: 1;
 }
 
 #header {
@@ -21,11 +29,34 @@ body {
     display: grid;
     justify-content: center;
     box-shadow: 0px 15px 10px -12px black;
+    opacity: 1;
 }
 
 #logo {
     height: 150px;
 }
 
+#about {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;    
+}
 
+#about_txt {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 200px;
+    margin-left: 50px;
+}
 
+#about2 {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+#footer {
+    padding-left: 30vw;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
