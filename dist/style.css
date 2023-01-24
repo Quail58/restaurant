@@ -9,18 +9,12 @@ body {
     background-color: #fdf2d7;
     width: 66vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     box-shadow: 0px 5px 15px black;
-    background-image: url('./assets/food.webp');
-    background-size: cover;
-    opacity: 1;
+    display: grid;
+    grid-template-rows: 150px auto;
 }
 
-#about {
-    opacity: 1;
-}
 
 #header {
     background-color: #fdf2d7;
@@ -37,8 +31,11 @@ body {
 }
 
 #about {
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;    
+    background: rgba(0, 0, 0, 0.5);    
+    background-image: url('./assets/food.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 #about_txt {
@@ -46,8 +43,10 @@ body {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    margin-top: 200px;
-    margin-left: 50px;
+    padding-top: 200px;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
 }
 
 #about2 {
@@ -55,8 +54,9 @@ body {
     font-size: 20px;
 }
 
-#footer {
-    padding-left: 30vw;
+#footer {    
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    justify-self: center;    
 }
