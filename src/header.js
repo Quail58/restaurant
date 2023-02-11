@@ -1,4 +1,20 @@
+import home from './mainpage.js';
+import menuPage from './menu.js';
+import aboutPage from './about.js';
+
 //creats the header for the page
+
+// function changePage(){
+//     const menu = document.getElementByClassName("menu");
+//     menu.AddEventListener("click", menuPage());
+
+//     const about = document.getElementByClassName("about");
+//     about.AddEventListener("click", aboutPage());
+
+//     const logo = document.getElementById("logo");
+//     logo.AddEventListener("click", home());
+// }
+
 function header() {
     // grabs the content by id
     const content = document.getElementById('content');
@@ -11,15 +27,16 @@ function header() {
         //creates about Tab under header
         const aboutTab = document.createElement('div');
         aboutTab.setAttribute('id', 'tab');
+        aboutTab.setAttribute('class','about');
         aboutTab.innerHTML = "About";
-        //aboutTab.addEventListener("click", aboutPage());
+        aboutTab.addEventListener("click", aboutPage);
         header.appendChild(aboutTab);
 
         //creates the logo under header
         const logo = document.createElement('img');
         logo.setAttribute('id','logo');
         logo.src = "./assets/logo.png";
-        //logo.onclick = home();
+        logo.addEventListener("click", home);
         header.appendChild(logo);
 
         //creates menu tab under header
@@ -27,7 +44,7 @@ function header() {
         menuTab.setAttribute('id', 'tab');
         menuTab.setAttribute('class', 'menu');
         menuTab.innerHTML = "Menu";
-        //menuTab.onclick = menuPage();
+        menuTab.addEventListener("click", menuPage);
         header.appendChild(menuTab);
 
     //creates the about sections for content
