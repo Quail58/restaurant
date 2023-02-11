@@ -78,3 +78,12 @@ body {
     bottom: 0;
     justify-self: center;    
 }
+
+#chefKiss {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 30vh;
+    margin-left: 100px;
+    border-radius: 100px;
+}
