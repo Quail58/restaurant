@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction aboutPage() {\n    //creates the text section\n    const about1 = document.getElementById('about1').innerHTML = \"Thank you for taking interest in our restaurant\";     \n    const about2 = document.getElementById('about2').innerHTML = \"We dont want to reveal too much about our space.<br>Each visit is its own experience.\";\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (aboutPage);\n\n//# sourceURL=webpack://restaurant/./src/about.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//creats the header for the page\nfunction header() {\n    // grabs the content by id\n    const content = document.getElementById('content');\n\n    //creates the header\n    const header = document.createElement('div');    \n    header.setAttribute('id','header');\n    content.appendChild(header);\n\n        //creates about Tab under header\n        const aboutTab = document.createElement('div');\n        aboutTab.setAttribute('id', 'tab');\n        aboutTab.innerHTML = \"About\";\n        //aboutTab.addEventListener(\"click\", aboutPage());\n        header.appendChild(aboutTab);\n\n        //creates the logo under header\n        const logo = document.createElement('img');\n        logo.setAttribute('id','logo');\n        logo.src = \"./assets/logo.png\";\n        //logo.onclick = home();\n        header.appendChild(logo);\n\n        //creates menu tab under header\n        const menuTab = document.createElement('div');\n        menuTab.setAttribute('id', 'tab');\n        menuTab.setAttribute('class', 'menu');\n        menuTab.innerHTML = \"Menu\";\n        //menuTab.onclick = menuPage();\n        header.appendChild(menuTab);\n\n    //creates the about sections for content\n    const about = document.createElement('div');\n    about.setAttribute('id','about');\n    content.appendChild(about);\n\n    //creates the sections to add text to in the tabs\n    const about_txt = document.createElement('div');\n    about_txt.setAttribute('id','about_txt');\n    about.appendChild(about_txt);\n    const about1 = document.createElement('div');\n    about1.setAttribute('id','about1');\n    about_txt.appendChild(about1);        \n    const about2 = document.createElement('div');\n    about2.setAttribute('id','about2');    \n    about_txt.appendChild(about2);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n//# sourceURL=webpack://restaurant/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainpage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainpage.js */ \"./src/mainpage.js\");\n\n\n(0,_mainpage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainpage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainpage.js */ \"./src/mainpage.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n/* harmony import */ var _about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.js */ \"./src/about.js\");\n/* harmony import */ var _header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\n\n\n\n\n\n\n\n\n\n\n\n//runs the header and about page on load\n(0,_header_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n(0,_mainpage_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//document.getElementById('tab').onclick = aboutPage();\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +46,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction home() {\n        // grabs the content by id\n        const content = document.getElementById('content');\n        //creates the header\n        const header = document.createElement('div');    \n        header.setAttribute('id','header');\n        content.appendChild(header);\n        //creates about Tab\n        const aboutTab = document.createElement('div');\n        aboutTab.setAttribute('id', 'tab')\n        aboutTab.innerHTML = \"About\";\n        header.appendChild(aboutTab);\n        //creates the logo    \n        const logo = document.createElement('img');\n        logo.setAttribute('id','logo');\n        logo.src = \"./assets/logo.png\";\n        header.appendChild(logo);\n        //creates menu tab\n        const menuTab = document.createElement('div');\n        menuTab.setAttribute('id', 'tab')\n        menuTab.innerHTML = \"Menu\";\n        header.appendChild(menuTab);\n        //creates the text section    \n        const about = document.createElement('div');\n        about.setAttribute('id','about');\n        content.appendChild(about);\n        const about_txt = document.createElement('div');\n        about_txt.setAttribute('id','about_txt');\n        about.appendChild(about_txt)\n        const about1 = document.createElement('div');\n        about1.setAttribute('id','about1');\n        about_txt.appendChild(about1);\n        const eclectic = document.createElement('div');\n        eclectic.innerHTML = 'Eclectic Food From Across The Globe';\n        about1.appendChild(eclectic);\n        const about2 = document.createElement('div');\n        about2.setAttribute('id','about2');    \n        const table = document.createElement('div');\n        table.innerHTML = 'Tables available by reservation only';\n        about2.appendChild(table);\n        const reservation = document.createElement('div')\n        reservation.innerHTML = 'To make a reservation please call 800-888-1234';\n        about2.appendChild(reservation);\n        about_txt.appendChild(about2);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://restaurant/./src/mainpage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction home() {\n        //sets the innerHTML for the home section \n        const about1 = document.getElementById('about1').innerHTML = \"Eclectic Food From Across The Globe\";     \n        const about2 = document.getElementById('about2').innerHTML = \"Tables available by reservation only<br>To make a reservation please call 800-888-1234\";\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://restaurant/./src/mainpage.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menuPage() {\n        //creates the text section\n        const about1 = document.getElementById('about1').innerHTML = \"Our Menu is curated daily by Chef Doug Gibs\";     \n        const about2 = document.getElementById('about2').innerHTML = \"We can change the courses based on dietary restrictons if you let us know beforehand\";\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
 
 /***/ })
 
