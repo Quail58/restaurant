@@ -30,17 +30,18 @@ body {
     height: 150px;
     margin-left: 30px;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 #tab {
     height: 100px;
     width: 100px;
     margin-top: 50px;
-    border: 2px solid;
     border-radius: 20px;
     text-align: center;
     padding-top: 49px;
     background-color: #ffdf86;
+    cursor: pointer;
 }
 
 #tab:hover {
