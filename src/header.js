@@ -4,17 +4,6 @@ import aboutPage from './about.js';
 
 //creats the header for the page
 
-// function changePage(){
-//     const menu = document.getElementByClassName("menu");
-//     menu.AddEventListener("click", menuPage());
-
-//     const about = document.getElementByClassName("about");
-//     about.AddEventListener("click", aboutPage());
-
-//     const logo = document.getElementById("logo");
-//     logo.AddEventListener("click", home());
-// }
-
 function header() {
     // grabs the content by id
     const content = document.getElementById('content');
